@@ -46,5 +46,5 @@ jobs:
       
       #Delete scratch org after successful build
       - name: Deleting scratch org
-        run: sfdx force:org:delete -p
+        run: sfdx force:org:delete -p -u actionsBuild
           
