@@ -26,7 +26,7 @@ jobs:
         uses: sfdx-actions/setup-sfdx@v1
         with:
       # Authorize a Salesforce org using an SFDX auth URL test
-          sfdx-auth-url: $({ secrets.DEVHUB_URL })
+          sfdx-auth-url: ${{ secrets.DEVHUB_URL }}
         
       - name: Set Default DevHub
         run: sfdx force:config:set defaultdevhubusername=csoo@ignyto.com.developer
