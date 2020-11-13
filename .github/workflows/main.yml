@@ -29,8 +29,8 @@ jobs:
         sfdx-auth-url: ${{ secrets.DEVHUB_URL }}
         
       #Sets the default org for us to create scratch orgs and package against
-      - name: Set Default DevHub
-        run: sfdx force:config:set defaultdevhubusername=csoo@ignyto.com.developer
+    - name: Set Default DevHub
+      run: sfdx force:config:set defaultdevhubusername=csoo@ignyto.com.developer
   
       #Creates a scratch org to test our code
    #   - name: Create Scratch Org
