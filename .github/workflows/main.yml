@@ -24,7 +24,7 @@ jobs:
     
     - name: Salesforce SFDX CLI Action
         uses: sfdx-actions/setup-sfdx@v1
-        with:
+          with:
       # Authorize a Salesforce org using an SFDX auth URL test
           sfdx-auth-url: ${{ secrets.DEVHUB_URL }}
         
