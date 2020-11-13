@@ -23,10 +23,10 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Salesforce SFDX CLI Action
-        uses: sfdx-actions/setup-sfdx@v1
-          with:
+      uses: sfdx-actions/setup-sfdx@v1
+      with:
       # Authorize a Salesforce org using an SFDX auth URL test
-          sfdx-auth-url: ${{ secrets.DEVHUB_URL }}
+        sfdx-auth-url: ${{ secrets.DEVHUB_URL }}
         
       #Sets the default org for us to create scratch orgs and package against
       - name: Set Default DevHub
