@@ -3,10 +3,10 @@
     "LastName": "Tester",
     "Email": "tester1@sfdx.course.com",
     "Alias": "tester",
-    "TimeZoneSidKEy": "America/Chicago",
-    "LocaleSidKey": "en_US",
+    "TimeZoneSidKEy": "United Kingdom/London",
+    "LocaleSidKey": "en_UK",
     "EmailEncodingKey": "UTF-8",
-    "LanguageLocaleKey": "en_US",
+    "LanguageLocaleKey": "en_UK",
     "profileName": "Standard Platform User",
     "generatePassword": true
 }

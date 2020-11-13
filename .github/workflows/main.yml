@@ -20,7 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     
       - name: Salesforce SFDX CLI Action
         uses: sfdx-actions/setup-sfdx@v1
@@ -33,18 +33,18 @@ jobs:
         run: sfdx force:config:set defaultdevhubusername=csoo@ignyto.com.developer
   
       #Creates a scratch org to test our code
-      - name: Create Scratch Org
-        run: sfdx force:org:create -a actionsBuild -d 1 -f config/project-scratch-def.json
+   #   - name: Create Scratch Org
+    #    run: sfdx force:org:create -a actionsBuild -d 1 -f config/project-scratch-def.json
 
       #Pushes all configurations to scratch org
-      - name: Pushing source
-        run: sfdx force:source:push -f -u actionsBuild
+     # - name: Pushing source
+      #  run: sfdx force:source:push -f -u actionsBuild
 
       #Run all Apex test in our scratch org
-      - name: Running Apex Tests
-        run: sfdx force:apex:run -l RunLocalTests -w 30
+     # - name: Running Apex Tests
+     #   run: sfdx force:apex:run -l RunLocalTests -w 30
       
       #Delete scratch org after successful build
-      - name: Deleting scratch org
-        run: sfdx force:org:delete -p -u actionsBuild
+    #  - name: Deleting scratch org
+     #   run: sfdx force:org:delete -p -u actionsBuild
           
