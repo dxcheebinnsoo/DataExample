@@ -1,0 +1,12 @@
+{
+    "Username": "tester1@sfdx.course.com",
+    "LastName": "Tester",
+    "Email": "tester1@sfdx.course.com",
+    "Alias": "tester",
+    "TimeZoneSidKEy": "United Kingdom/London",
+    "LocaleSidKey": "en_UK",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_UK",
+    "profileName": "Standard Platform User",
+    "generatePassword": true
+}
